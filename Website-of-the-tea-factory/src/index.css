@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .min-btn {
+        @apply bg-green-500 w-32 h-10 mt-6 text-white font-bold ml-1 relative bottom-2 rounded-[5px]  text-[18px] flex items-center justify-center hover:bg-green-600
+    }
+    .order-fertilizer-btn{
+        @apply w-[100px] h-8 bg-red-600 relative left-[150px] font-bold text-white rounded-[7px] hover:bg-red-700
+    }
+    .gram-btn{
+        @apply w-20 h-10 border-2 border-gray-400 text-gray-400 ml-4 hover:bg-black hover:text-white hover:border-black
+    }
+
+}
+#dropzone-external {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(183, 183, 183, 0.1);
+    border-width: 2px;
+    border-style: dashed;
+    padding: 10px;
+}
+
+#dropzone-external > * {
+    pointer-events: none;
+}
+
+#dropzone-external.dropzone-active {
+    border-style: solid;
+}
+
+.widget-container > span {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#dropzone-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#dropzone-text > span {
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+#upload-progress {
+    display: flex;
+    margin-top: 10px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
